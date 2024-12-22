@@ -57,6 +57,7 @@ public class AuthController {
             userData.setProfile(allData.getProfile());
             userData.setSucursal(allData.getSucursal());
             userData.setZona(allData.getZona());
+            userData.setName(allData.getName());
 
             String token = jwtTokenUtil.generateToken(userData);
 

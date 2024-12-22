@@ -52,6 +52,7 @@ public String generateToken(LoginDto usuario) {
     Map<String, Object> claims = new HashMap<>();
     claims.put("sucursal", usuario.getSucursal());
     claims.put("zona", usuario.getZona());
+    claims.put("title-name", usuario.getName());
     claims.put("profile", usuario.getProfile());
 
     return doGenerateToken(claims, usuario.getUsername());
