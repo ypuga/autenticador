@@ -18,4 +18,6 @@ public class LoginDto {
     private String zona;
 
     private String profile;
+
+    private String name;
 }

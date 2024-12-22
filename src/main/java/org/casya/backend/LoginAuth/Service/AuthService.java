@@ -20,6 +20,7 @@ public class AuthService {
         userToSave.setProfile(data.getProfile());
         userToSave.setSucursal(data.getSucursal());
         userToSave.setZona(data.getZona());
+        userToSave.setName(data.getName());
 
         repository.save(userToSave);
     }
