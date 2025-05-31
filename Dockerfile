@@ -15,7 +15,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
 # Variables de ambiente por defecto
-ENV SPRING_DATASOURCE_URL=jdbc:postgresql://host.docker.internal:5432/administracion-usuarios
+ENV SPRING_DATASOURCE_URL=jdbc:postgresql://host.docker.internal:5432/administracion_usuarios
 ENV SPRING_DATASOURCE_USERNAME=postgres
 ENV SPRING_DATASOURCE_PASSWORD=Contra12345
 
